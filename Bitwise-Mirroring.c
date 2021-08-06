@@ -17,3 +17,12 @@ int main()
  printf("Normal %x", n);
  printf("\nMirrored %x", temp);
 }
+
+/*Another logic with more shift involved */
+/*
+ for(i=0;i<32/2;i++)
+   {
+      swap |= (((num>>i)&1) <<(31-i));
+      swap |= (((num>>31-i)&1) <<(i));
+   }
+*/
